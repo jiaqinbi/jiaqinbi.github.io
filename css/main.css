@@ -1085,7 +1085,7 @@ pre .javascript .function {
   }
 }
 .header {
-  background: transparent;
+  background: url("../image/background.jpg");
 }
 .header-inner {
   position: relative;
@@ -1765,7 +1765,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #419f6a;
+  background: #4d5eff;
 }
 .feed-link,
 .chat {
@@ -2476,10 +2476,4 @@ embed {
 }
 body {
   background-color: #fcf6e1;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: 10% 10%;
-  width: 50%;
-  margin-left: 25%;
 }
