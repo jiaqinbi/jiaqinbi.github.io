@@ -1085,7 +1085,7 @@ pre .javascript .function {
   }
 }
 .header {
-  background: url("../image/background.jpg");
+  background: transparent;
 }
 .header-inner {
   position: relative;
@@ -1730,7 +1730,13 @@ pre .javascript .function {
   max-width: 96px;
   height: auto;
   border: 2px solid #333;
-  opacity: 1;
+/* start*/
+  border-radius: 60%;
+  transition: 2.5s all;
+}
+.site-author-image:hover {
+  background-color: #55dae1;
+  transform: rotate(360deg);
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1765,7 +1771,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4d5eff;
+  background: #c474ff;
 }
 .feed-link,
 .chat {
@@ -2386,6 +2392,11 @@ embed {
   padding: 5px;
   max-width: 150px;
   background: #fff;
+  border-radius: 50%;
+  transition: 2.5s all;
+}
+.custom-logo-image:hover {
+  transform: rotate(360deg);
 }
 @media (max-width: 767px) {
   .site-nav {
