@@ -54,7 +54,7 @@ $(document).ready(function() {
   var sidebarToggleLine1st = new SidebarToggleLine({
     el    : '.sidebar-toggle-line-first',
     status: {
-      arrow: {width: '50%', rotateZ: '-45deg', top: '2px'},
+      arrow: {width: '60%', rotateZ: '45deg', top: '2px', left: '50%'},
       close: {width: '100%', rotateZ: '-45deg', top: '5px'}
     }
   });
@@ -68,7 +68,7 @@ $(document).ready(function() {
   var sidebarToggleLine3rd = new SidebarToggleLine({
     el    : '.sidebar-toggle-line-last',
     status: {
-      arrow: {width: '50%', rotateZ: '45deg', top: '-2px'},
+      arrow: {width: '60%', rotateZ: '-45deg', top: '-2px', left: '50%'},
       close: {width: '100%', rotateZ: '45deg', top: '-5px'}
     }
   });
