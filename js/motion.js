@@ -54,7 +54,7 @@ $(document).ready(function() {
   var sidebarToggleLine1st = new SidebarToggleLine({
     el    : '.sidebar-toggle-line-first',
     status: {
-      arrow: {width: '60%', rotateZ: '45deg', top: '2px', left: '50%'},
+      arrow: {width: '50%', rotateZ: '-45deg', top: '2px'},
       close: {width: '100%', rotateZ: '-45deg', top: '5px'}
     }
   });
@@ -68,7 +68,7 @@ $(document).ready(function() {
   var sidebarToggleLine3rd = new SidebarToggleLine({
     el    : '.sidebar-toggle-line-last',
     status: {
-      arrow: {width: '60%', rotateZ: '-45deg', top: '-2px', left: '50%'},
+      arrow: {width: '50%', rotateZ: '45deg', top: '-2px'},
       close: {width: '100%', rotateZ: '45deg', top: '-5px'}
     }
   });
@@ -98,7 +98,7 @@ $(document).ready(function() {
       $(document)
         .on('sidebar.isShowing', function() {
           NexT.utils.isDesktop() && $('body').velocity('stop').velocity(
-            {paddingLeft: SIDEBAR_WIDTH},
+            {paddingRight: SIDEBAR_WIDTH},
             SIDEBAR_DISPLAY_DURATION
           );
         })
@@ -169,7 +169,7 @@ $(document).ready(function() {
       this.sidebarEl.trigger('sidebar.isShowing');
     },
     hideSidebar: function() {
-      NexT.utils.isDesktop() && $('body').velocity('stop').velocity({paddingLeft: 0});
+      NexT.utils.isDesktop() && $('body').velocity('stop').velocity({paddingRight: 0});
       this.sidebarEl.find('.motion-element').velocity('stop').css('display', 'none');
       this.sidebarEl.velocity('stop').velocity({width: 0}, {display: 'none'});
 
