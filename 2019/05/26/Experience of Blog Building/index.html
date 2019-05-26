@@ -19,6 +19,21 @@
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 <meta name="theme-color" content="#222">
 
 
@@ -96,18 +111,18 @@
 
 
 
-  <meta name="description" content="欢迎来到毕家钦的博客！此篇文章发布得益于博主YouMeek的帮助，详细博客搭建教程请查看Youmeek博客搭建。 正文   五六月份对于大四学生来说正是毕业季！旅游、聚会、上班、毕设便成了我们的几个核心点。五月中下旬毕设全部工作结束后，因为不想成为一条咸 鱼而选择开始学习研究生阶段需要用到的知识技能。同时也选择自己搭建了一个个人博客，用于记录......其实此前自己也搭建过一次个人博客，但是 并没">
-<meta name="keywords" content="随笔">
+  <meta name="description" content="此篇文章仅介绍博客搭建的概略步骤以及自己的一些心得!">
+<meta name="keywords" content="心得,Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="（起始篇）--记录一下博客正式使用日">
-<meta property="og:url" content="http://code.technology.com/2019/05/26/test2/index.html">
+<meta property="og:title" content="&lt;font style=&quot;font-size:25pt;font-family:隶书;color:black;&quot;&gt;博客搭建心得&lt;&#x2F;font&gt;">
+<meta property="og:url" content="http://code.technology.com/2019/05/26/Experience of Blog Building/index.html">
 <meta property="og:site_name" content="毕家钦的小站">
-<meta property="og:description" content="欢迎来到毕家钦的博客！此篇文章发布得益于博主YouMeek的帮助，详细博客搭建教程请查看Youmeek博客搭建。 正文   五六月份对于大四学生来说正是毕业季！旅游、聚会、上班、毕设便成了我们的几个核心点。五月中下旬毕设全部工作结束后，因为不想成为一条咸 鱼而选择开始学习研究生阶段需要用到的知识技能。同时也选择自己搭建了一个个人博客，用于记录......其实此前自己也搭建过一次个人博客，但是 并没">
+<meta property="og:description" content="此篇文章仅介绍博客搭建的概略步骤以及自己的一些心得!">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-25T10:10:27.904Z">
+<meta property="og:updated_time" content="2019-05-26T13:52:19.865Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="（起始篇）--记录一下博客正式使用日">
-<meta name="twitter:description" content="欢迎来到毕家钦的博客！此篇文章发布得益于博主YouMeek的帮助，详细博客搭建教程请查看Youmeek博客搭建。 正文   五六月份对于大四学生来说正是毕业季！旅游、聚会、上班、毕设便成了我们的几个核心点。五月中下旬毕设全部工作结束后，因为不想成为一条咸 鱼而选择开始学习研究生阶段需要用到的知识技能。同时也选择自己搭建了一个个人博客，用于记录......其实此前自己也搭建过一次个人博客，但是 并没">
+<meta name="twitter:title" content="&lt;font style=&quot;font-size:25pt;font-family:隶书;color:black;&quot;&gt;博客搭建心得&lt;&#x2F;font&gt;">
+<meta name="twitter:description" content="此篇文章仅介绍博客搭建的概略步骤以及自己的一些心得!">
 
 
 
@@ -115,7 +130,7 @@
 
   
   
-  <link rel="canonical" href="http://code.technology.com/2019/05/26/test2/">
+  <link rel="canonical" href="http://code.technology.com/2019/05/26/Experience of Blog Building/">
 
 
 
@@ -125,7 +140,7 @@
   };
 </script>
 
-  <title>（起始篇）--记录一下博客正式使用日 | 毕家钦的小站</title>
+  <title><font style="font-size:25pt;font-family:隶书;color:black;">博客搭建心得</font> | 毕家钦的小站</title>
   
 
 
@@ -345,7 +360,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://code.technology.com/2019/05/26/test2/">
+    <link itemprop="mainEntityOfPage" href="http://code.technology.com/2019/05/26/Experience of Blog Building/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="毕家钦">
@@ -362,7 +377,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">（起始篇）--记录一下博客正式使用日
+          <h1 class="post-title" itemprop="name headline"><font style="font-size:25pt;font-family:隶书;color:black;">博客搭建心得</font>
 
               
             
@@ -388,25 +403,9 @@
                 
               
 
-              <time title="创建时间：2019-05-26 10:51:22" itemprop="dateCreated datePublished" datetime="2019-05-26T10:51:22+08:00">2019-05-26</time>
+              <time title="创建时间：2019-05-26 21:52:19" itemprop="dateCreated datePublished" datetime="2019-05-26T21:52:19+08:00">2019-05-26</time>
             
 
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-25 18:10:27" itemprop="dateModified" datetime="2019-05-25T18:10:27+08:00">2019-05-25</time>
-              
             
           </span>
 
@@ -444,6 +443,8 @@
           
 
           
+            <div class="post-description"><font style="font-size:15pt;font-family:隶书;">此篇文章仅介绍博客搭建的概略步骤以及自己的一些心得!</font></div>
+          
 
         </div>
       </header>
@@ -458,21 +459,15 @@
       
 
       
-        <p>欢迎来到毕家钦的博客！此篇文章发布得益于博主<a href="http://www.youmeek.com/" target="_blank" rel="noopener">YouMeek</a>的帮助，详细博客搭建教程请查看<a href="http://www.youmeek.com/hexo-install/" target="_blank" rel="noopener">Youmeek博客搭建</a>。</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><pre><code>   五六月份对于大四学生来说正是毕业季！旅游、聚会、上班、毕设便成了我们的几个核心点。五月中下旬毕设全部工作结束后，因为不想成为一条咸
-鱼而选择开始学习研究生阶段需要用到的知识技能。同时也选择自己搭建了一个个人博客，用于记录......其实此前自己也搭建过一次个人博客，但是
-并没有记录什么内容，因此本次选择了重新搭建。
-</code></pre><h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><pre><code>test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
-test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
-test test test 
-test test 
-test 
-test 
-test 
-test 
-test test 
-</code></pre><h4 id="test-1"><a href="#test-1" class="headerlink" title="test"></a>test</h4><pre><code>test test test test test 
-</code></pre>
+        <!--<img src="../image/description-markdown基本语法.jpg" alt="" style="width: 100%;"/> -->
+<a id="more"></a>
+<hr>
+
+<h2 id="一、写在前面"><a href="#一、写在前面" class="headerlink" title="一、写在前面"></a>一、写在前面</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本站使用的主题是基于<font style="color:red;">Hexo Next</font>二次开发而成的。虽然搭建耗时较短，但由于不太熟悉其模板文件导致二次开发需要持续进行下去。<br>博主本人具有一定的js和css的基础，所以可以选择性抛弃其原有的一些样式而使用自己编写的样式和动画美化页面，个性化设置会一直进行下去，后期可能的话也会像其他博主一样更新美化教程。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于博主本人是第一次使用Markdown语法发布文章，对其用法还不太熟悉，所以此篇文章包括之前的一篇文章在格式排版上面都表现<br>得不是很好太美观。这一点怎么说呢……嗯…估计有点不符合编程人员的要求吧<font style="color:#869194;font-size:10pt;">(PS:写了几年代码很少发过技术贴，但是博主已经深刻意识到这一点，后面会一定会做出改变!)</font>。</p>
+<h2 id="二、搭建过程概述"><a href="#二、搭建过程概述" class="headerlink" title="二、搭建过程概述"></a>二、搭建过程概述</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1). 环境要求: Node.js + Git管理工具 + IntelliJ IDEA + Hexo主题 + github代码社区<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2). 软件下载: Node.js下载地址: <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>，下载后安装全部默认即可。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; git下载地址: <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a>，根据自己电脑下载对应版本，安装全部默认即可。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   idea下载地址: <a href="https://www.jetbrains.com/idea/download/#section=windows" target="_blank" rel="noopener">https://www.jetbrains.com/idea/download/#section=windows</a>，下载免费版本或者百度搜索破解版。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hexo主题下载地址: <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a>，挑选自己喜欢主题在Git终端中克隆即可。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; github地址: <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>，注册账号并创建仓库。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="color:red;font-size:10pt;">注: 具体安装细节网上有详细教程，另附我参考得网址<a href="http://www.youmeek.com/" target="_blank" rel="noopener">http://www.youmeek.com/</a>。</font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3). 工具设置: 博客主题源更换以及美化编辑器都是idea，不得不说idea的确是一个非常强大的工具，此间为了方便博客的发布，特地将<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;idea终端从默认的cmd转向了git，极大的方便了本地测试和发布。终端修改步骤为:File–&gt;Setting–&gt;Tools–&gt;Terminal，然后<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在安装位置选择git bash.exe即可。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4). 主题美化: 博客主题一般都是直接克隆的Hexo主题，我是用的Hexo Next主题。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一般修改和美化的几个主要地方如下:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、主目录下的_config.yml以及主题目录下的_config.yml；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、主题下的layout目录下的swig文件，有些主题时ejs文件；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、主题下的css文件夹—&gt;_custom文件夹下的custom.styl文件；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4、主题下的js文件夹下的文件；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5). 常用命令: 一般修改之后发布需遵循 hexo clean  –&gt;  hexo generate –&gt;  hexo deploy 三步；若只是简单的美化和发布文章在本地<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试只需输入 hexo server 命令；若配置文件修改了在本地测试同样需要输入发布的前两个命令。</p>
+<h2 id="三、文章发布"><a href="#三、文章发布" class="headerlink" title="三、文章发布"></a>三、文章发布</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1). md文件编辑器配置: 在idea中插件中搜索<font style="color:red;">Markdown Navigator</font>安装重启即可。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2). Markdown语法: 语法参考 <a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a>。</p>
+<h2 id="四、写在最后"><a href="#四、写在最后" class="headerlink" title="四、写在最后"></a>四、写在最后</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其实之前搭建过一次博客，并且自己也有编程基础，所以途中并没有遇到什么特别大的过不去的坎，也感谢那些帮我解决问题的人，另<br>外特别感谢我师傅，丰富的经验让我很是膜拜！！！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后续会不断完善此博客，也会陆续更新帖子，励志成为一个技术大牛<font style="color:#869194;font-size:10pt;">(PS:梦想还是要有的!)</font>。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附上一位感觉特别厉害的博主<a href="https://io-oi.me/" target="_blank" rel="noopener">reuixiy</a>，里面有一篇“打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化”的博客详细介绍了所有步骤，值得深入学习。</p>
+
       
     </div>
 
@@ -495,7 +490,9 @@ test test
       
         <div class="post-tags">
           
-            <a href="/tags/随笔/" rel="tag"># 随笔</a>
+            <a href="/tags/心得/" rel="tag"># 心得</a>
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
         </div>
       
@@ -508,7 +505,7 @@ test test
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/26/test1/" rel="next" title="（起始篇）--记录一下博客正式使用日">
+              <a href="/2019/05/24/start-blog/" rel="next" title="（起始篇）--记录一下博客正式使用日">
                 <i class="fa fa-chevron-left"></i> （起始篇）--记录一下博客正式使用日
               </a>
             
@@ -587,7 +584,7 @@ test test
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -625,7 +622,11 @@ test test
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -689,7 +690,7 @@ test test
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#正文"><span class="nav-number">1.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#test"><span class="nav-number">1.1.</span> <span class="nav-text">test</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#test-1"><span class="nav-number">1.1.1.</span> <span class="nav-text">test</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、写在前面"><span class="nav-number">1.</span> <span class="nav-text">一、写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、搭建过程概述"><span class="nav-number">2.</span> <span class="nav-text">二、搭建过程概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、文章发布"><span class="nav-number">3.</span> <span class="nav-text">三、文章发布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、写在最后"><span class="nav-number">4.</span> <span class="nav-text">四、写在最后</span></a></li></ol></div>
             
 
           </div>
@@ -741,7 +742,7 @@ test test
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">1.1k</span> 字
+      博客全站共： <span class="post-count">1.6k</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
