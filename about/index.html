@@ -72,7 +72,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '7.1.1',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
     fancybox: false,
@@ -172,12 +172,12 @@
     
   
 
-  <div class="container sidebar-position-right page-post-detail">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta custom-logo">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -192,10 +192,6 @@
         <p class="site-subtitle">这里只有软硬件开发相关，要了解更多请点击 >>> 未更新</p>
       
     
-    
-      <a>
-        <img class="custom-logo-image" src="https://avatar.csdn.net/7/1/5/3_weixin_34223655.jpg" alt="毕家钦的小站">
-      </a>
     
   </div>
 
@@ -403,6 +399,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -719,6 +719,36 @@ setInterval("createtime()",250);
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: '22amhghYsw4KWHBPJd6OvwxU-gzGzoHsz',
+    appKey: 'WwKGRgNBFkiOIBqAPJ3J5TD2',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
 
 
   

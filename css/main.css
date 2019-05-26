@@ -1771,7 +1771,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d2472a;
+  background: #7ae314;
 }
 .feed-link,
 .chat {
@@ -2800,6 +2800,7 @@ body {
 }
 .posts-expand .post-eof {
   margin: 0px;
+  background-color: #fff;
 }
 .post {
   border-radius: 10px;
@@ -2826,4 +2827,11 @@ ul.menu li a:HOVER {
 .sidebar-inner {
   border-radius: 10px;
   background-color: #ccc;
+}
+.site-subtitle {
+  color: #4d4d4c;
+  font-size: 11pt;
+}
+.custom-logo-site-title {
+  background-color: #000;
 }
