@@ -1771,7 +1771,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7ae314;
+  background: #fff9ff;
 }
 .feed-link,
 .chat {
@@ -2807,16 +2807,18 @@ body {
   margin-bottom: 50px;
   padding: 45px 36px 36px 36px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  background-color: #fff;
+  background-color: #fcf6e1;
 }
 .content-wrap {
+  padding-top: 0px;
   background-color: #fcf6e1;
 }
 .header-inner {
+  padding-top: 0px;
   background-color: #fcf6e1;
 }
 .site-brand-wrapper {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .menu {
   border-radius: 10px;
