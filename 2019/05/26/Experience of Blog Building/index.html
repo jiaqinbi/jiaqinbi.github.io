@@ -114,14 +114,14 @@
   <meta name="description" content="此篇文章仅介绍博客搭建的概略步骤以及自己的一些心得!">
 <meta name="keywords" content="心得,Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&lt;font style=&quot;font-size:25pt;font-family:隶书;color:black;&quot;&gt;博客搭建心得&lt;&#x2F;font&gt;">
+<meta property="og:title" content="博客搭建心得">
 <meta property="og:url" content="http://code.technology.com/2019/05/26/Experience of Blog Building/index.html">
 <meta property="og:site_name" content="毕家钦的小站">
 <meta property="og:description" content="此篇文章仅介绍博客搭建的概略步骤以及自己的一些心得!">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-26T13:52:19.865Z">
+<meta property="og:updated_time" content="2019-05-26T14:47:48.086Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&lt;font style=&quot;font-size:25pt;font-family:隶书;color:black;&quot;&gt;博客搭建心得&lt;&#x2F;font&gt;">
+<meta name="twitter:title" content="博客搭建心得">
 <meta name="twitter:description" content="此篇文章仅介绍博客搭建的概略步骤以及自己的一些心得!">
 
 
@@ -140,7 +140,7 @@
   };
 </script>
 
-  <title><font style="font-size:25pt;font-family:隶书;color:black;">博客搭建心得</font> | 毕家钦的小站</title>
+  <title>博客搭建心得 | 毕家钦的小站</title>
   
 
 
@@ -377,7 +377,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"><font style="font-size:25pt;font-family:隶书;color:black;">博客搭建心得</font>
+          <h1 class="post-title" itemprop="name headline">博客搭建心得
 
               
             
@@ -403,7 +403,7 @@
                 
               
 
-              <time title="创建时间：2019-05-26 21:52:19" itemprop="dateCreated datePublished" datetime="2019-05-26T21:52:19+08:00">2019-05-26</time>
+              <time title="创建时间：2019-05-26 22:47:48" itemprop="dateCreated datePublished" datetime="2019-05-26T22:47:48+08:00">2019-05-26</time>
             
 
             
@@ -432,6 +432,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/05/26/Experience of Blog Building/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/26/Experience of Blog Building/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -459,8 +472,7 @@
       
 
       
-        <!--<img src="../image/description-markdown基本语法.jpg" alt="" style="width: 100%;"/> -->
-<a id="more"></a>
+        <p><br><!--<img src="../image/description-markdown基本语法.jpg" alt="" style="width: 100%;"/> --><br><a id="more"></a></p>
 <hr>
 
 <h2 id="一、写在前面"><a href="#一、写在前面" class="headerlink" title="一、写在前面"></a>一、写在前面</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本站使用的主题是基于<font style="color:red;">Hexo Next</font>二次开发而成的。虽然搭建耗时较短，但由于不太熟悉其模板文件导致二次开发需要持续进行下去。<br>博主本人具有一定的js和css的基础，所以可以选择性抛弃其原有的一些样式而使用自己编写的样式和动画美化页面，个性化设置会一直进行下去，后期可能的话也会像其他博主一样更新美化教程。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于博主本人是第一次使用Markdown语法发布文章，对其用法还不太熟悉，所以此篇文章包括之前的一篇文章在格式排版上面都表现<br>得不是很好太美观。这一点怎么说呢……嗯…估计有点不符合编程人员的要求吧<font style="color:#869194;font-size:10pt;">(PS:写了几年代码很少发过技术贴，但是博主已经深刻意识到这一点，后面会一定会做出改变!)</font>。</p>
@@ -534,6 +546,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -661,6 +677,17 @@
                     
                   
                   <a href="mailto:bijiaqin@163.com" title="E-Mail &rarr; mailto:bijiaqin@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://blog.csdn.net/qq_25121641" title="CSDN &rarr; https://blog.csdn.net/qq_25121641" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>CSDN</a>
                 </span>
               
             </div>
@@ -880,6 +907,36 @@ setInterval("createtime()",250);
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: '22amhghYsw4KWHBPJd6OvwxU-gzGzoHsz',
+    appKey: 'WwKGRgNBFkiOIBqAPJ3J5TD2',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
 
 
   

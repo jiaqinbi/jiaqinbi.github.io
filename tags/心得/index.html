@@ -382,14 +382,14 @@
         
           <a class="post-title-link" href="/2019/05/26/Experience of Blog Building/" itemprop="url">
             
-              <span itemprop="name"><font style="font-size:25pt;font-family:隶书;color:black;">博客搭建心得</font></span>
+              <span itemprop="name">博客搭建心得</span>
             
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-26T21:52:19+08:00" content="2019-05-26">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-26T22:47:48+08:00" content="2019-05-26">
           05-26
         </time>
       </div>
@@ -526,6 +526,17 @@
                     
                   
                   <a href="mailto:bijiaqin@163.com" title="E-Mail &rarr; mailto:bijiaqin@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://blog.csdn.net/qq_25121641" title="CSDN &rarr; https://blog.csdn.net/qq_25121641" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>CSDN</a>
                 </span>
               
             </div>
@@ -724,6 +735,36 @@ setInterval("createtime()",250);
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: '22amhghYsw4KWHBPJd6OvwxU-gzGzoHsz',
+    appKey: 'WwKGRgNBFkiOIBqAPJ3J5TD2',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
 
 
 
