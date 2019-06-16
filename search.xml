@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Bootstrap简单学习</title>
+      <link href="/2019/06/16/Bootstrap%20Simple-Learning/"/>
+      <url>/2019/06/16/Bootstrap%20Simple-Learning/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、Bootstrap简介"><a href="#一、Bootstrap简介" class="headerlink" title="一、Bootstrap简介"></a>一、Bootstrap简介</h2><h3 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a><strong>1.概念</strong></h3><p>​        介绍：bootstrap是一个前端开发的框架，无需自己编写大量繁琐的css代码就可快速制作出非常美观的页               面，开发人员进行基于bootstrap二次开发即可。</p><p>​        优点：</p><p>​            1.定义了很多css样式表和js插件。</p><p>​            2.响应式布局(会根据页面分辨率不同自动调整页面大小)。</p><h3 id="2-快速入门"><a href="#2-快速入门" class="headerlink" title="2.快速入门"></a><strong>2.快速入门</strong></h3><p>​        <a href="https://www.bootcss.com/" target="_blank" rel="noopener">Bootstrap首页</a>  <a href="https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip" target="_blank" rel="noopener">Bootstrap下载</a></p><p>​        1.下载bootstrap</p><p>​        2.引入bootstrap到项目中(js  css  font  )</p><p>​        3.搭配jquery使用</p><p>​        4.具体效果见项目</p><h2 id="二、响应式布局"><a href="#二、响应式布局" class="headerlink" title="二、响应式布局"></a>二、响应式布局</h2><h3 id="栅格系统的实现"><a href="#栅格系统的实现" class="headerlink" title="栅格系统的实现"></a><a href="https://v3.bootcss.com/css/#grid" target="_blank" rel="noopener">栅格系统的实现</a></h3><p>​            1.定义容器。相当于table</p><p>​                容器分类：</p><p>​                    1.container：两边留白</p><p>​                    2.container-fluid：，每种页面都是100%的宽度                    </p><p>​            2.定义行，相当于tr。格式：row</p><p>​            3.定义元素，指定元素在不同设备上所占的格子数目。样式：col-设备代号-格子数目</p><p>​            4.设备代号：</p><p>​                <strong>超小屏幕</strong> 手机 (&lt;768px)  –xs</p><p>​                <strong>小屏幕</strong> 平板 (≥768px) –sm</p><p>​                <strong>中等屏幕</strong> 桌面显示器 (≥992px)  –md</p><p>​                <strong>大屏幕</strong> 大桌面显示器 (≥1200px)  –lg</p><p>​            5.注意：</p><p>​                1.一行中如果格子数目超过12，则超出部分自动换行。</p><p>​                2.栅格类属性可以向上兼容。</p><p>​                3.如果真实设备宽度小于了设置栅格类属性的设备代码的最小值，会一个元素沾满一整行。</p><h2 id="三、Css样式和Js插件"><a href="#三、Css样式和Js插件" class="headerlink" title="三、Css样式和Js插件"></a>三、Css样式和Js插件</h2><h3 id="1-全局css样式"><a href="#1-全局css样式" class="headerlink" title="1.全局css样式"></a>1.全局css样式</h3><p>​            按钮：class=”btn btn-default”</p><p>​                图片 ：class=”img-responsive” –图片百分百</p><p>​                     img-circle  –圆形</p><p>​                     img-rounded  –矩形</p><p>​                     img-thumbnail  –相框</p><p>​            表单 ：详见bootstrap官网css全局样式标签片段</p><p>​            表格 ：详见bootstrap官网css全局样式标签片段</p><h3 id="2-组件"><a href="#2-组件" class="headerlink" title="2.组件"></a>2.组件</h3><p>​        导航与分页 ：详见bootstrap官网c组件标签片段</p><h3 id="3-插件"><a href="#3-插件" class="headerlink" title="3.插件"></a>3.插件</h3><p>​        轮播图 ：详见bootstrap官网轮播图标签片段</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> bootstrap </category>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bootstrap </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客搭建心得</title>
       <link href="/2019/05/26/Experience%20of%20Blog%20Building/"/>
       <url>/2019/05/26/Experience%20of%20Blog%20Building/</url>
@@ -20,9 +49,9 @@
       
         <tags>
             
-            <tag> 心得 </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> 心得 </tag>
             
         </tags>
       
