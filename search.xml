@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Ajax使用JSON传送动态数据需要注意的问题</title>
+      <link href="/2019/06/29/Some%20Noticeable%20Problems%20in%20Ajax%20Using%20JSON%20to%20Transfer%20Dynamic%20Data/"/>
+      <url>/2019/06/29/Some%20Noticeable%20Problems%20in%20Ajax%20Using%20JSON%20to%20Transfer%20Dynamic%20Data/</url>
+      
+        <content type="html"><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>​    使用ajax传入动态数据到后台，动态数据是通过jquery获取到的数据并定义了变量名，当按照静态数据传送的方式传送时会报错，提示无法解析，报错如下：</p><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2019</span>-<span class="number">06</span>-<span class="number">29</span> <span class="number">12</span>:<span class="number">25</span>:<span class="number">05</span>,<span class="number">302</span> <span class="number">10042</span>  [o-<span class="number">8080</span>-exec-<span class="number">165</span>] WARN  efaultHandlerExceptionResolver  - Failed to read HTTP message: org<span class="variable">.springframework</span><span class="variable">.http</span><span class="variable">.converter</span><span class="variable">.HttpMessageNotReadableException</span>: JSON parse error: Unrecognized token 'admin': was expecting ('true', 'false' <span class="keyword">or</span> '<span class="literal">null</span>'); nested exception is com<span class="variable">.fasterxml</span><span class="variable">.jackson</span><span class="variable">.core</span><span class="variable">.JsonParseException</span>: Unrecognized token 'admin': was expecting ('true', 'false' <span class="keyword">or</span> '<span class="literal">null</span>') at [Source: (PushbackInputStream); line: <span class="number">1</span>, column: <span class="number">19</span>]</span><br></pre></td></tr></table></figure><p>代码如下：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> username = $(<span class="string">"#username"</span>).val();</span><br><span class="line"><span class="keyword">var</span> password = $(<span class="string">"#password"</span>).val();</span><br><span class="line">...</span><br><span class="line">data:<span class="string">'&#123;"username":'</span>+username+<span class="string">', "password":'</span>+password+<span class="string">'&#125;'</span>,</span><br><span class="line">...</span><br></pre></td></tr></table></figure><h3 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h3><p>​    当dataType指定为json后，1.4+以上的jquery版本对json格式要求更加严格。如果不是严格的json格式，就不能正常执行success回调函数。</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>​    将动态的object转化成json String类型，直接调用Json提供的函数即可，代码如下：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:<span class="string">'&#123;"username":'</span>+<span class="built_in">JSON</span>.stringify(username)+<span class="string">', "password":'</span>+<span class="built_in">JSON</span>.stringify(password)+<span class="string">'&#125;'</span>,</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ajax </tag>
+            
+            <tag> Json，data </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SSM整合解析</title>
       <link href="/2019/06/28/Analysis%20of%20SSM%20Integration/"/>
       <url>/2019/06/28/Analysis%20of%20SSM%20Integration/</url>
