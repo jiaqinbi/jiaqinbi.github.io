@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>bootstrap导航条下拉无效果解决办法</title>
+      <link href="/2019/07/02/Bootstrap%20navigation%20bar%20pull%20down%20no%20effect%20solution/"/>
+      <url>/2019/07/02/Bootstrap%20navigation%20bar%20pull%20down%20no%20effect%20solution/</url>
+      
+        <content type="html"><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>​    bootstrap导航条推荐样式有静态效果，但是无动态效果，下拉列表无反应…….</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>​    bootstrap.js依赖于jquery,所以引入的jquery必须放在bootstrap.js的前面。如下所示:</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type="text/javascript" src="js/jquery-1.12.4.min.js"&gt;&lt;/script&gt;</span><br><span class="line">&lt;script type="text/javascript" src="js/bootstrap.min.js"&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Bootstrap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bootstrap </tag>
+            
+            <tag> 问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SSM框架整合步骤</title>
       <link href="/2019/06/29/SSM%20Framework%20Integration%20Steps/"/>
       <url>/2019/06/29/SSM%20Framework%20Integration%20Steps/</url>
