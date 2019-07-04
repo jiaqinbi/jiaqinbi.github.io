@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>数据可视化技术HighCharts应用开发教程(一)--------下载与安装</title>
+      <link href="/2019/07/04/Data%20visualization%20technology%20HighCharts%20application%20development%20tutorial%20(a)%20--------%20download%20and%20install/"/>
+      <url>/2019/07/04/Data%20visualization%20technology%20HighCharts%20application%20development%20tutorial%20(a)%20--------%20download%20and%20install/</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>​    本次教程其实就是一个学习过程的记录，小白进阶，写出来供大家参考，大神勿喷，哈哈！</p><h3 id="HighCharts介绍"><a href="#HighCharts介绍" class="headerlink" title="HighCharts介绍"></a>HighCharts介绍</h3><p>​    Highcharts 系列软件包含 Highcharts JS，Highstock JS，Highmaps JS 共三款软件，均为纯 JavaScript 编写的 HTML5 图表库，全部源码开放，个人及非商业用途可以任意使用及源代码编辑。</p><p>​    本教程只针对Highcharts，Highcharts 是一个用纯 JavaScript 编写的一个图表库， 能够很简单便捷的在 Web 网站或是 Web 应用程序添加有交互性的图表。它支持的图表类型有直线图、曲线图、区域图、柱状图、饼状图、散状点图、仪表图、气泡图、瀑布流图等多达 20 种图表，其中很多图表可以集成在同一个图形中形成混合图，主要用于数据可视化。</p><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><h4 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h4><p>​    因为Hightcharts官网提供的CDN服务与hexo提供的类似，并不是所有时间访问速度都很快，相对本地文件来说稳定性较差。所以本次教程提供下载地址<a href="https://www.highcharts.com.cn/download" target="_blank" rel="noopener">Hightcharts</a>，点击下载最新版本解压即可。</p><h4 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">|-- code               所有 js 文件及源代码</span><br><span class="line">|-- css              Highcharts css 文件（只用于 CSS 版本 Highcharts） </span><br><span class="line">    |-- lib             相关的库文件</span><br><span class="line">    |-- es-modules       功能模块文件目录</span><br><span class="line">    |-- themes          主题文件目录</span><br><span class="line">    |-- highcharts.js              highcharts 主文件</span><br><span class="line">    |-- highcharts.src.js          highcharts 主文件源码</span><br><span class="line">    |-- highcharts-3d.js           highcharts 3d 功能文件</span><br><span class="line">    |-- highcharts-3d.src.js       highcharts 3d 功能文件源码</span><br><span class="line">    |-- highcharts-more.js         highcharts 增加功能文件</span><br><span class="line">    |-- highcharts-more.src.js     highcharts 增加功能文件源码</span><br><span class="line">    |-- readme.txt                 源代码目录说明文件</span><br><span class="line">|-- examples           例子</span><br><span class="line">|-- gfx                例子用到的图片资源</span><br><span class="line">|-- graphics           例子用到的图片资源 </span><br><span class="line">|-- index.htm          例子入口文件 </span><br><span class="line">|-- license.pdf        使用协议文档</span><br><span class="line">|-- readme.txt         说明文件</span><br></pre></td></tr></table></figure><h3 id="简单用法"><a href="#简单用法" class="headerlink" title="简单用法"></a>简单用法</h3><p>​    将对应css以及js文件复制到对应web项目中引入即可使用。如：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src="js/highcharts.js" type="text/javascript"&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Highcharts </category>
+          
+          <category> js </category>
+          
+          <category> 可视化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> data </tag>
+            
+            <tag> Highcharts </tag>
+            
+            <tag> 可视化 </tag>
+            
+            <tag> js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>bootstrap导航条下拉无效果解决办法</title>
       <link href="/2019/07/02/Bootstrap%20navigation%20bar%20pull%20down%20no%20effect%20solution/"/>
       <url>/2019/07/02/Bootstrap%20navigation%20bar%20pull%20down%20no%20effect%20solution/</url>
