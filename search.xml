@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>数据可视化技术HighCharts应用开发教程(二)--------第一个简单应用</title>
+      <link href="/2019/07/04/Data%20visualization%20technology%20HighCharts%20application%20development%20tutorial%20(2)%20--------%20the%20first%20simple%20application/"/>
+      <url>/2019/07/04/Data%20visualization%20technology%20HighCharts%20application%20development%20tutorial%20(2)%20--------%20the%20first%20simple%20application/</url>
+      
+        <content type="html"><![CDATA[<h3 id="图标主要组成"><a href="#图标主要组成" class="headerlink" title="图标主要组成"></a>图标主要组成</h3><p>​    <div align="center"><img src="../image/highcharts-comp.png" alt="图标主要组成部分"></div></p><h3 id="第一个应用"><a href="#第一个应用" class="headerlink" title="第一个应用"></a>第一个应用</h3><p>​    代码如下：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">"text/html;charset=UTF-8"</span> language=<span class="string">"java"</span> %&gt;</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">  &lt;title&gt;第一个 Highcharts 图表&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- 图表容器 DOM --&gt;</span><br><span class="line">&lt;div id="container" style="width: 600px;height:400px;"&gt;&lt;/div&gt;</span><br><span class="line">&lt;!-- 引入 highcharts.js --&gt;</span><br><span class="line">&lt;script src="js/highcharts.js" type="text/javascript"&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="comment">// 图表配置</span></span><br><span class="line">    <span class="keyword">var</span> options = &#123;</span><br><span class="line">        chart: &#123;</span><br><span class="line">            type: <span class="string">'bar'</span>   <span class="comment">//指定图表的类型，默认是折线图（line）,速度仪为gauge</span></span><br><span class="line">        &#125;,</span><br><span class="line">        title: &#123;</span><br><span class="line">            text: <span class="string">'我的第一个图表'</span>                 <span class="comment">// 标题</span></span><br><span class="line">        &#125;,</span><br><span class="line">        xAxis: &#123;</span><br><span class="line">            categories: [<span class="string">'苹果'</span>, <span class="string">'香蕉'</span>, <span class="string">'橙子'</span>]   <span class="comment">// x 轴分类</span></span><br><span class="line">        &#125;,</span><br><span class="line">        yAxis: &#123;</span><br><span class="line">            title: &#123;</span><br><span class="line">                text: <span class="string">'吃水果个数'</span>                <span class="comment">// y 轴标题</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        series: [&#123;                              <span class="comment">// 数据列</span></span><br><span class="line">            name: <span class="string">'小明'</span>,                        <span class="comment">// 数据列名</span></span><br><span class="line">            data: [<span class="number">1</span>, <span class="number">0</span>, <span class="number">4</span>]                     <span class="comment">// 数据</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">            name: <span class="string">'小红'</span>,</span><br><span class="line">            data: [<span class="number">5</span>, <span class="number">7</span>, <span class="number">3</span>]</span><br><span class="line">        &#125;]</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">// 图表初始化函数</span></span><br><span class="line">    <span class="keyword">var</span> chart = Highcharts.chart(<span class="string">'container'</span>, options);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>​    效果如下:</p><p>​    <div align="center"><img src="../image/highchart-pic1.png" alt></div></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Highcharts </category>
+          
+          <category> js </category>
+          
+          <category> 可视化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Highcharts </tag>
+            
+            <tag> 可视化 </tag>
+            
+            <tag> data </tag>
+            
+            <tag> js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>数据可视化技术HighCharts应用开发教程(一)--------下载与安装</title>
       <link href="/2019/07/04/Data%20visualization%20technology%20HighCharts%20application%20development%20tutorial%20(a)%20--------%20download%20and%20install/"/>
       <url>/2019/07/04/Data%20visualization%20technology%20HighCharts%20application%20development%20tutorial%20(a)%20--------%20download%20and%20install/</url>
@@ -24,11 +59,11 @@
       
         <tags>
             
-            <tag> data </tag>
-            
             <tag> Highcharts </tag>
             
             <tag> 可视化 </tag>
+            
+            <tag> data </tag>
             
             <tag> js </tag>
             
@@ -113,11 +148,11 @@
       
         <tags>
             
+            <tag> data </tag>
+            
             <tag> Ajax </tag>
             
             <tag> Json </tag>
-            
-            <tag> data </tag>
             
         </tags>
       
