@@ -4,6 +4,43 @@
   
     
     <entry>
+      <title>git与github|gitee之间的关系</title>
+      <link href="/2019/10/31/Data%20visualization%20technology%20HighCharts%20application%20development%20tutorial%20(2)%20--------%20the%20first%20simple%20application/"/>
+      <url>/2019/10/31/Data%20visualization%20technology%20HighCharts%20application%20development%20tutorial%20(2)%20--------%20the%20first%20simple%20application/</url>
+      
+        <content type="html"><![CDATA[<h3 id="git与github-gitee之间的关系"><a href="#git与github-gitee之间的关系" class="headerlink" title="git与github|gitee之间的关系"></a>git与github|gitee之间的关系</h3><p>&emsp;&emsp;<strong>Git是目前世界上最先进的分布式版本控制系统。</strong></p><p>&emsp;&emsp;<strong>github|gitee开源的代码托管平台</strong></p><h4 id="git命令-持续更新中…"><a href="#git命令-持续更新中…" class="headerlink" title="git命令|持续更新中…"></a>git命令|<a href>持续更新中…</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">|-- git init                                将本地文件夹初始化成一个git仓库</span><br><span class="line">|-- git status                              查看本地仓库的状态</span><br><span class="line">|-- git add .                               添加要提交的文件，“.”表示所有文件</span><br><span class="line">|-- git commit -m &quot;这里是提交文件的注释&quot;      每次提交的的注释</span><br><span class="line">|-- git remote add origin [仓库地址]  将本地仓库与github|gitee仓库关联</span><br><span class="line">|-- git push -u origin master               将仓库中欲提交的文件提交到mster分支</span><br><span class="line">|-- git push origin master                  远程仓库中有文件时用此命令</span><br><span class="line">|-- git push -f origin master               -u提交出错时可用此命令强制提交</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;上述命令均是本人代码托管时常用的命令，如有问题请大家留言。<br>&emsp;&emsp;另外附上本人阅读的<a href="https://blog.csdn.net/u010839779/article/details/81177429" target="_blank" rel="noopener">比较详细的git教程博文</a>链接。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> git </category>
+          
+          <category> github </category>
+          
+          <category> gitee </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> github </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> code </tag>
+            
+            <tag> 代码托管 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Doxygen注释规范</title>
       <link href="/2019/10/29/Doxygen%20Annotation%20specification/"/>
       <url>/2019/10/29/Doxygen%20Annotation%20specification/</url>
@@ -76,11 +113,11 @@
       
         <tags>
             
-            <tag> data </tag>
-            
             <tag> Highcharts </tag>
             
             <tag> 可视化 </tag>
+            
+            <tag> data </tag>
             
             <tag> js </tag>
             
@@ -111,11 +148,11 @@
       
         <tags>
             
-            <tag> data </tag>
-            
             <tag> Highcharts </tag>
             
             <tag> 可视化 </tag>
+            
+            <tag> data </tag>
             
             <tag> js </tag>
             
@@ -200,11 +237,11 @@
       
         <tags>
             
+            <tag> data </tag>
+            
             <tag> Ajax </tag>
             
             <tag> Json </tag>
-            
-            <tag> data </tag>
             
         </tags>
       
